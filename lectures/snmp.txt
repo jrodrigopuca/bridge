@@ -1,0 +1,16 @@
+SNMP
+
+Simple Network Managmente Protocol
+Fue inicialmente creado para switchs y routers pero es extendido para muchos dispositivos
+- OID: Object Identifier (cada dispositivo que puede ser monitoriado tiene uno, es como su "ip"). Ejemplo 1.3.6.1.2.1.2.2.1.8
+- MIB: Managment Information Base (es un archivo de texto que permite traducir a lo que buscamos realizar) Ejemplo SYNOLOGY-SYSTEM-MIB::temperature.0
+
+Formas de usar SNMP
+- polling: se monitorea al dispositivo por el puerto 161
+- notifying: el dispositivo envía un mensaje +OID al monitor por el puerto 161.
+
+Los mensajes pueden ser llamados traps, notificaciones o informes.
+
+Versiones:
+- 1, 2c: sin nombre de usuario, usa un "community string", no tiene encriptación
+- 3: es más segura (necesita de un usuario y contraseña), encriptación
