@@ -1,0 +1,5 @@
+ObsPython.py
+C:\Program Files\obs-studio\data\obs-scripting\64bit
+
+Scripts
+C:\Program Files\obs-studio\data\obs-plugins\frontend-tools\scripts
